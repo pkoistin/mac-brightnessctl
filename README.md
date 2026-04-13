@@ -64,6 +64,19 @@ rm -rf mac-brightnessctl-${VERSION}
 unset VERSION
 ```
 
+## kbd-brightness-keys
+
+A companion tool that lets you control keyboard backlight with **Option + Brightness keys** (F1/F2).
+
+```bash
+make kbd-brightness-keys
+./kbd-brightness-keys
+```
+
+Runs in the foreground, intercepting Option+F1 (dimmer) and Option+F2 (brighter). Plain F1/F2 still controls screen brightness as usual. Requires Accessibility permission (System Settings > Privacy & Security > Accessibility).
+
+Uses 16 perceptual brightness steps so each press feels equally spaced — fine control in the dark, coarser at full brightness.
+
 ## Inspiration
 
 This project was inspired by the work of [EthanRDoesMC](https://github.com/EthanRDoesMC) and their repository [KBPulse](https://github.com/EthanRDoesMC/KBPulse). I have built upon their ideas and adapted the code to suit the needs of my project.
